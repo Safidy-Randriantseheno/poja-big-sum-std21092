@@ -1,0 +1,10 @@
+config:
+  target: 'https://github.com/hei-school/poja-sqlite/blob/5e7a5b9a55aafe193fd82d456c5b48b7f6e9a220/artillery.yml'
+  phases:
+    - duration: 60
+      arrivalRate: 10
+
+scenarios:
+  - flow:
+      - get:
+          url: '/ping'
